@@ -21,7 +21,7 @@ class RegisterController extends Controller
     public function store(Request $request)
     {
         //$request->get('email) acceder a un valor
-        dd('post...', $request);
+        // dd('post...', $request);
 
         //Modificar el request
         $request->request->add(['username' => Str::slug($request->username)]);
